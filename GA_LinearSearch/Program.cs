@@ -35,7 +35,7 @@ namespace GA_LinearSearch
             list.Displayinformatio();
 
 
-            //Console.WriteLine(list[1]);
+            //Console.WriteLine(list[3]);
         }//main
 
         // Tast Code

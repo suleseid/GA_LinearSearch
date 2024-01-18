@@ -18,7 +18,7 @@ namespace GA_LinearSearch
         {
           
           CustomList<string> list = new CustomList<string>();
-
+            //To check number of list
             /*for (int i = 0; i< 20; i++)
              {
                  list.Add("John");
@@ -29,7 +29,8 @@ namespace GA_LinearSearch
             list.Add("Rocky"); 
             list.Add("Ronda");
 
-
+            //Lets remove index 2 and replace the next one
+            //that shows the name of Rocky
             list.RemoveAt(2);
             list.Displayinformatio();
 
@@ -104,13 +105,13 @@ namespace GA_LinearSearch
             return false;
         }
 
-        // 2. Search for store by category - first store by index or -1 if not found
+        // 2. Search for store by category - first store by index or -1 if not found.
          public static int IndexOfName(string[] nameList, string searchKey)
         {
             //Loop through the Array
             for (int i = 0; i < nameList.Length; i++)
             {
-                //compaire the current item with the seerchKey
+                //compare the current item with the searchKey
                 string currentName = nameList[i];
                 if (currentName == searchKey)
                 {
@@ -156,7 +157,8 @@ namespace GA_LinearSearch
             for (int i = 0; i < numStudents; i++)
             {
                 string name = GenerateName();
-                int grade = random.Next(0, 101); //To generate random grade beetween 0 and 100
+                //lets generate random grade beetween 0 and 100
+                int grade = random.Next(0, 101); 
                 students.Add(new Student(name, grade));
 
             }
